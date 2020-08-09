@@ -1,0 +1,8 @@
+image: electronshepherds/chisel-vscode:latest
+
+build:
+  stage: build
+  script:
+    - cd hello-world
+    - sbt run
+    - cd ..
