@@ -1,11 +1,11 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.128.0/containers/debian
 {
-	"name": "chisel-hello-world",
-	"image": "electronshepherds/chisel-vscode:latest",
+	"name": "chisel-ch2-ex",
+	"image": "electronshepherds/chisel-dev",
 	"runArgs": [
 		"--rm",
-		"--name=chisel-hello-world",
+		"--name=chisel-ch2-ex",
 	],
 	"remoteEnv": {
 		// replace this with the host IP address

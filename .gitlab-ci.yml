@@ -1,8 +1,14 @@
-image: electronshepherds/chisel-vscode:latest
+image: electronshepherds/chisel:latest
 
 build:
   stage: build
   script:
-    - cd hello-world
-    - sbt run
+    - cd ch1-ex
+    - sbt run test
+    - cd ..
+    - cd ch2-ex
+    - sbt run test
+    - cd ..
+    - cd ch3-ex
+    - sbt run test
     - cd ..

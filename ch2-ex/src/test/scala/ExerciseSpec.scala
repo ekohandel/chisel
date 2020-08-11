@@ -1,9 +1,9 @@
 import chisel3.iotesters.PeekPokeTester
 import org.scalatest._
 
-class HelloSpec extends FlatSpec with Matchers {
+class ExerciseSpec extends FlatSpec with Matchers {
   "Hello" should "pass" in {
-    chisel3.iotesters.Driver(() => new Hello()) { c =>
+    chisel3.iotesters.Driver.execute(Array("--target-dir", "target"), () => new Exercise()) { c =>
       new PeekPokeTester(c) {
 
         println("Start the blinking LED")

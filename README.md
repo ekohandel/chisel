@@ -1,0 +1,1 @@
+docker run --rm -it -e DISPLAY=192.168.1.79:0 --name test -v ~/.xilinx:/xilinx --mount source=xilinx-ise-14.7,target=/opt/xilinx,readonly -e XILINXD_LICENSE_FILE=/xilinx/Xilinx.lic electronshepherds/xilinx-ise-14.7-env /bin/bash
