@@ -15,3 +15,6 @@ build:
     - cd ch5-ex
     - sbt run test
     - cd ..
+    - cd ch6-ex
+    - sbt run
+    - cd ..
